@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <item name="tv_item_number" type="id" />
+    <item name="rv_numbers" type="id" />
+</resources>
