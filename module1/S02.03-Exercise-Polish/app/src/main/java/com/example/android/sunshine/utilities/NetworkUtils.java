@@ -111,13 +111,15 @@ public final class NetworkUtils {
     public static String getResponseFromHttpUrl(URL url) throws IOException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         try {
+            System.out.println(urlConnection+"          dc2");
             InputStream in = urlConnection.getInputStream();
-
+            System.out.println(in+"          dc3");
             Scanner scanner = new Scanner(in);
             scanner.useDelimiter("\\A");
 
             boolean hasInput = scanner.hasNext();
             if (hasInput) {
+                System.out.println(scanner.next()+"          dc4");
                 return scanner.next();
             } else {
                 return null;

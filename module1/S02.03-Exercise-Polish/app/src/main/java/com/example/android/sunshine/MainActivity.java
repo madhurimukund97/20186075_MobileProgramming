@@ -100,8 +100,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
             String location = params[0];
+            System.out.println(location);
             URL weatherRequestUrl = NetworkUtils.buildUrl(location);
-
+            System.out.println(weatherRequestUrl+"     dc");
             try {
                 String jsonWeatherResponse = NetworkUtils
                         .getResponseFromHttpUrl(weatherRequestUrl);

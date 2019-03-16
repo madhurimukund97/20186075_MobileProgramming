@@ -15,6 +15,7 @@
  */
 package com.example.android.explicitintent;
 
+import android.R;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +27,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final android.R.attr R = ;
     /* Fields that will store our EditText and Button */
     private EditText mNameEntry;
     private Button mDoSomethingCoolButton;
